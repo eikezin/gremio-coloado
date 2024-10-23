@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bem-Vindo ao site de Eventos do G~rêmio Escolar!</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/agndevents.css'>
+   
+</head>
+<body>
+    <header class="menu">
+        <a href="./pg_inicial.html"><img src="./midia/gremio_colorado.jpg" alt="Logo"></a>
+       
+        <input type="search" name="Buscar" id="pesq" placeholder="Buscar...">
+
+        <ul id="lista">
+            <a href="galeria.html"><li id="item">Galeria</li></a>
+           <a href="eventos.html"><li id="item">Eventos</li></a>
+            <a href="palestrantes.html"><li id="item">Palestrantes</li></a>
+        </ul>
+
+        <a href="./cadastro.html"><input type="button" name="Cadastrar" id="cad" value="Cadastrar-se"></a>
+    </header>
+
+    <h1 id="text">Cadastre Seu Evento!</h1>
+
+    <main>
+        <div class="textoo">
+        <p id="conetudo">O cadastro de eventos permite que você compartilhe informações sobre atividades, workshops, palestras e outras ocasiões especiais com nossa comunidade. Para cadastrar seu evento, preencha o formulário com os detalhes necessários, como data, horário, local e uma breve descrição. Após a aprovação, seu evento será divulgado em nosso site, garantindo que mais pessoas possam participar e aproveitar. Faça parte da nossa agenda e ajude a promover suas iniciativas!</p>
+        </div>
+        <form action="./terminocadastro.html"  method="get" onsubmit=" return validarFormulario()">
+            <input class="caixadetexto" type="text" id="nome" placeholder="Nome do Evento:" required> 
+
+            <input class="caixadetexto"  type="text" id="email" placeholder="Email:"required>
+
+            <input class="caixadetexto"  type="date" id="data" placeholder="Data:">
+
+            <input class="caixadetexto"  type="text" id="hora" placeholder="Horário:"required>
+
+            <input class="caixadetexto"  type="text" id="valor" placeholder="Valor:"required>
+
+            <input class="caixadetexto"  type="password" id="senha" placeholder="Senha:"required>
+
+            <input class="caixadetexto"  type="password" id="confirmarsenha" placeholder="Confirmar senha:"required> <br>
+
+            <button type="submit" id="botao">Enviar!</button>    
+        </form>
+    </main>
+
+    <footer>
+        <ul id="opc">
+            <a href="eventos.html"><li id="itemopc">Eventos</li></a>
+            <a href="palestrantes.html"><li id="itemopc">Palestrantes</li></a>
+            <a href="agendareventos.html"><li id="itemopc"> Agendar Eventos</li></a>
+        </ul>
+
+        <a href="" id="pol">"© [2024] [Grêmio Colorado]. Todos os direitos reservados."</a>
+        <div id="midias">
+            <a href="https://web.whatsapp.com/"><img src="./midia/whatsapp.webp" alt="" id="zap"></a>
+            <a href="https://www.instagram.com/"><img src="./midia/instagram.webp" alt="" id="insta"></a>
+        </div>
+    </footer>
+
+    <script src='./js/agndeventos.js'></script>
+</body>
+</html>
